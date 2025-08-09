@@ -54,7 +54,7 @@ class _ImageCapturePageState extends State<ImageCapturePage> {
       'image': base64Image,
     });
 
-    final url = Uri.parse('https://your-n8n-webhook.url/webhook');
+    final url = Uri.parse('https://n8n.vnigo.sbs/webhook');
     await http.post(
       url,
       headers: {'Content-Type': 'application/json'},
